@@ -6,8 +6,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 
 const Section = () => {
-  const [text, setText] = useState(""); // Initialize text state
-  const [isTyping, setIsTyping] = useState(true); // Control typing/erasing
+  const [text, setText] = useState("");
+  // eslint-disable-next-line
+  const [setIsTyping] = useState(true);
 
   useEffect(() => {
     const textToType = [
@@ -37,11 +38,11 @@ const Section = () => {
         setTimeout(() => {
           setIsTyping(false);
           setTimeout(() => {
-            setIsTyping(true); // Start typing next message
+            setIsTyping(true);
             erase = false;
             currentIndex = (currentIndex + 1) % textToType.length;
-          }, 7000); // Delay before typing the next message (3 seconds)
-        }, 7000); // Delay before erasing (7 seconds)
+          }, 7000);
+        }, 7000);
       }
 
       if (erase && currentText === "") {
@@ -49,7 +50,7 @@ const Section = () => {
         currentIndex = (currentIndex + 1) % textToType.length;
       }
 
-      const speed = erase ? 40 : 70; // Typing and erasing speed in milliseconds
+      const speed = erase ? 40 : 70;
       setTimeout(typeText, speed);
     };
 
