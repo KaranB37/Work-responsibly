@@ -8,7 +8,7 @@ import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 const Section = () => {
   const [text, setText] = useState("");
   // eslint-disable-next-line
-  const [setIsTyping] = useState(true);
+  const [isTyping, setIsTyping] = useState(true);
 
   useEffect(() => {
     const textToType = [
@@ -55,10 +55,16 @@ const Section = () => {
     };
 
     typeText();
+
+    document.addEventListener("DOMContentLoaded", () => {
+      const nav = document.querySelector(".nav");
+
+      nav.classList.add("is-loaded");
+    });
   }, []);
 
   return (
-    <section className="custom-section">
+    <section className="custom-section ">
       <nav>
         <div className="left">Work Responsibly</div>
         <div className="right">
@@ -66,6 +72,7 @@ const Section = () => {
           <a href="/suggest">Suggest a link</a>
         </div>
       </nav>
+
       <div className="content-wrapper">
         <h1>Work Responsibly</h1>
         <p>— {text}</p>
