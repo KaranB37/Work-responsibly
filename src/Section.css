@@ -7,9 +7,7 @@
   
 }
 /* Add this CSS to your stylesheet */
-body {
-  overflow: hidden;
-}
+
 
 
 .white-sheet {
@@ -117,7 +115,7 @@ nav {
     transform: translateY(30%); /* Initially moved down */
     animation: slideFromBottom 1s ease 2s forwards; /* Slide in from the bottom after 2 seconds */
     height: 100vh;
-    overflow: auto; 
+
     
 } 
 
@@ -198,7 +196,7 @@ nav {
     }
     .content-wrapper p{
       font-size: 36px;
-      margin-right: 80vh;
+      margin-right: 39vh;
       margin-top: 15px;
     }
     .content-wrapper {
@@ -212,16 +210,21 @@ margin-left: 70px;
 }
 
 @media screen and (max-width: 500px) {
+  .content-wrapper h1, p {
+    font-size: 33px;}
+  .custom-section {
+    padding: 3vh 0vh;
+}
   nav {
     flex-direction: row; 
     align-self: space-between;
 
   }
   nav .left{
- font-size: 16px;
+ font-size: 13px;
   }
   a{
-    font-size: 16px;
+    font-size: 13px;
      }
 
 }
@@ -229,7 +232,7 @@ margin-left: 70px;
 
   .content-wrapper p{
     font-size: 36px;
-    margin-right: 40vh;
+    margin-right: 16vh;
     margin-top: 15px;
   }
 }
@@ -241,8 +244,8 @@ margin-left: 70px;
     margin-top: 15px;
   }
   .content-wrapper{
-    margin-top: 10vh;
-    margin-left: 8vh;
+    margin-top: 18vh;
+    margin-left: 2vh;
   }
 }
 

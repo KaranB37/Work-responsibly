@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useRef } from "react";
-
 import "./Section.css";
 import "./index.css";
 import Social from "./Icons";
