@@ -1,16 +1,51 @@
 /* Section.css */
 .custom-section {
-    padding: 5vh 25vh;
-
-  }
+  position: relative;
+  padding: 5vh 25vh;
+  background-color: #f8f8f8; /* Set the background color to the final color */
+  z-index: 1; /* Place this section above other content */
   
+}
+/* Add this CSS to your stylesheet */
+body {
+  overflow: hidden;
+}
 
-  nav {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    flex-direction: row;
 
+.white-sheet {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white; /* Set the initial background color to white */
+  z-index: 2; /* Place the white sheet above other content */
+  animation: slideWhiteSheet 1.5s ease-in-out forwards; /* Slide the white sheet to the right (adjust animation duration) */
+}
+
+@keyframes slideWhiteSheet {
+  from {
+    transform: translateX(0); /* Initially visible */
+  }
+  to {
+    transform: translateX(100%); /* Slide the white sheet to the right */
+  }
+}
+
+/* Other styles remain the same */
+
+/* Other styles remain the same */
+
+
+
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-direction: row;
+  opacity: 0; /* Initially hidden */
+  animation: fadeInNav 1s ease 1.5s forwards; /* Fade in after 1 second */
 }
 
 @keyframes fadeInFromTop {
@@ -24,6 +59,24 @@
   }
 }
   
+@keyframes fadeInNav {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInSocialIcons {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
   
   .left {
     color:  #6e9e89;
@@ -38,19 +91,17 @@
     font-weight: 500;
   }
 
-
   .social-icons {
     position: fixed;
     bottom: 0;
     left: 0;
     padding-left: 35px;
     padding-bottom: 25px;
-    display: flex; 
-    align-items: center; 
+    display: flex;
+    align-items: center;
     flex-direction: column;
     opacity: 0; /* Initially hidden */
-    transform: translateY(-100%); /* Move up completely out of view */
-    animation: fadeInFromTop 1s ease 1 forwards;
+    animation: fadeInSocialIcons 1s ease 1.5s forwards; /* Fade in after 1 second */
   }
   
   .social-icons a {
@@ -62,15 +113,30 @@
 
   .content-wrapper {
     margin-top: 100px;
-    opacity: 0; /* Initially hidden */
-    transform: translateY(-100%); /* Move up completely out of view */
-    animation: fadeInFromTop 1s ease 1 forwards;
+    opacity: 0; 
+    transform: translateY(30%); /* Initially moved down */
+    animation: slideFromBottom 1s ease 2s forwards; /* Slide in from the bottom after 2 seconds */
+    height: 100vh;
+    overflow: auto; 
+    
 } 
+
+@keyframes slideFromBottom {
+  from {
+    opacity: 0;
+    transform: translateY(30%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 
 .content-wrapper h1 {
   color:  #6e9e89;
   font-size: 50px;
-  font-weight: 500;
+  font-weight: lighter;
   margin: auto;
 }
 
@@ -82,69 +148,24 @@
   
   font-weight: 500;
 }
-.down{
+/* Update your CSS */
+.down {
   position: fixed;
   bottom: 0;
   left: 0;
   margin-left: 22vh;
   margin-bottom: 5vh;
+  animation: fadeInFromTop 1s ease 2s forwards; /* Apply the same fade-in animation after 2 seconds */
 }
-.down span{
+
+.down span {
   margin-left: 10px;
   font-size: 15px;
   font-weight: 500;
   opacity: 0; /* Initially hidden */
-  transform: translateY(-100%); /* Move up completely out of view */
-  animation: fadeInFromTop 1s ease 1 forwards;
+  transform: translateY(100%); /* Move down completely out of view */
+  animation: fadeInFromTop 1s ease 2s forwards; /* Apply the same fade-in animation after 2 seconds */
 }
-/* 
-@media screen and (max-width: 500px) {
-    nav {
-      flex-direction: column; 
-      align-items: center;
-    }
-    .right {
-      margin-top: 20px;
-    }
-    .custom-section {
-        padding: 5vh 0vh;
-      }
-      .social-icons {
-        padding-left: 20px;
-        padding-bottom: 25px;
-      }
-      .social-icons a{
-        font-size: 22px;
-        padding: 5px;
-      }
-      
-      .content-wrapper h1,p {
-        font-size: 36px;
-        margin: auto;
-      }
-      .content-wrapper p{
-        font-size: 36px;
-        margin: auto;
-      }
-      .content-wrapper {
-        margin-top: 50px;
-        margin-left: 20px;
-    } 
-    .down{
- margin-left: 70px;
-    }
-
-  }
-  @media screen and (max-width: 800px){
-    .content-wrapper {
-      margin-top: 60px;
-  } 
-
-.content-wrapper p{
-
-  margin-right:auto;
-}
-  } */
 
   
 @media screen and (max-width: 1200px) {
@@ -222,5 +243,19 @@ margin-left: 70px;
   .content-wrapper{
     margin-top: 10vh;
     margin-left: 8vh;
+  }
+}
+
+
+.typed-cursor {
+  display: inline-block;
+  width: 1ch; /* Adjust the width of the cursor as needed */
+  background-color: black; /* Color of the cursor */
+  animation: blinkCursor 1s step-end infinite;
+}
+
+@keyframes blinkCursor {
+  from, to {
+    background-color: black; /* Color of the cursor */
   }
 }
