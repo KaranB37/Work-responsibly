@@ -18,7 +18,7 @@
   height: 100%;
   background-color: white; /* Set the initial background color to white */
   z-index: 2; /* Place the white sheet above other content */
-  animation: slideWhiteSheet 1.5s ease-in-out forwards; /* Slide the white sheet to the right (adjust animation duration) */
+  animation: slideWhiteSheet 2s ease-in-out forwards; /* Slide the white sheet to the right (adjust animation duration) */
 }
 
 @keyframes slideWhiteSheet {

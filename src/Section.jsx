@@ -16,7 +16,7 @@ const Section = () => {
     // Hide the white sheet after the animation is done
     setTimeout(() => {
       setShowWhiteSheet(false);
-    }, 1500);
+    }, 2000);
 
     // Show the content after the fade-in animation is done
     setTimeout(() => {
