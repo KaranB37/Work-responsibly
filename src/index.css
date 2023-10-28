@@ -1,34 +1,15 @@
 
 @import '~font-awesome/css/font-awesome.css';
 
+
+
+
+
+
+
 body {
   margin: 0;
-  font-family: 'Lora', serif;
+  font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-
-/* Hide the default scrollbar for webkit-based browsers (e.g., Chrome, Safari) */
-::-webkit-scrollbar {
-  width: 12px; /* Adjust the width as needed for the slim scrollbar */
-}
-
-/* Define the track (background) of the scrollbar */
-::-webkit-scrollbar-track {
-  background: #f0f0f0; /* Background color of the track */
-  border-radius: 100%; /* Border radius for a curved appearance */
-}
-
-/* Define the thumb (the draggable part of the scrollbar) */
-::-webkit-scrollbar-thumb {
-  background: transparent; /* Make the thumb transparent by default */
-  border: 2px solid transparent; /* Add a transparent border for the curved effect */
-  border-radius: 100%; /* Border radius for a curved appearance */
-}
-
-/* On hover, reveal the thumb by changing its background color */
-::-webkit-scrollbar-thumb:hover {
-  background: #888; /* Color of the thumb */
-  border: 2px solid #888; /* Border color for the curved effect */
 }

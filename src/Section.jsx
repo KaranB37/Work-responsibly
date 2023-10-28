@@ -13,24 +13,22 @@ const Section = () => {
   const [showWhiteSheet, setShowWhiteSheet] = useState(true);
 
   useEffect(() => {
-    // Hide the white sheet after the animation is done
     setTimeout(() => {
       setShowWhiteSheet(false);
-    }, 2000);
+    }, 1000); // Faster animation
 
-    // Show the content after the fade-in animation is done
     setTimeout(() => {
       setIsTyping(false);
-    }, 3000); // Adjust the timing to match the fade-in animation
+    }, 1500); // Faster animation
 
     const options = {
       strings: [
         "A collection of resources for a healthy and balanced approach to work.",
       ],
-      typeSpeed: 70, // Typing speed in milliseconds
-      backSpeed: 50, // Erasing speed in milliseconds
-      startDelay: 1000, // Delay before typing starts in milliseconds
-      backDelay: 2000, // Delay before erasing starts in milliseconds
+      typeSpeed: 40, // Faster typing speed
+      backSpeed: 30, // Faster erasing speed
+      startDelay: 500, // Reduced delay before typing starts
+      backDelay: 1000, // Reduced delay before erasing starts
       loop: true, // Loop the typing animation
       showCursor: false, // Hide the typing cursor
     };
@@ -64,10 +62,8 @@ const Section = () => {
         </p>
       </div>
       <div className="down">
-        <span>
-          <FontAwesomeIcon className="icon" icon={faArrowDown} /> Browse Topic
-          and Resources
-        </span>
+        <FontAwesomeIcon className="icon" icon={faArrowDown} />
+        <span>Browse Topic and Resources</span>
       </div>
       <Social />
     </section>

@@ -1,7 +1,7 @@
 /* Section.css */
 .custom-section {
   position: relative;
-  padding: 5vh 25vh;
+  padding: 7vh 25vh;
   background-color: #f8f8f8; /* Set the background color to the final color */
   z-index: 1; /* Place this section above other content */
   
@@ -9,6 +9,9 @@
 /* Add this CSS to your stylesheet */
 
 
+body{
+  overflow: hidden;
+}
 
 .white-sheet {
   position: absolute;
@@ -16,9 +19,9 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: white; /* Set the initial background color to white */
-  z-index: 2; /* Place the white sheet above other content */
-  animation: slideWhiteSheet 2s ease-in-out forwards; /* Slide the white sheet to the right (adjust animation duration) */
+  background-color: white;
+  z-index: 2;
+  animation: slideWhiteSheet 1s ease-in-out forwards; /* Faster animation */
 }
 
 @keyframes slideWhiteSheet {
@@ -42,8 +45,8 @@ nav {
   justify-content: space-between;
   width: 100%;
   flex-direction: row;
-  opacity: 0; /* Initially hidden */
-  animation: fadeInNav 1s ease 1.5s forwards; /* Fade in after 1 second */
+  opacity: 0;
+  animation: fadeInNav 0.5s ease 1s forwards; /* Faster animation */
 }
 
 @keyframes fadeInFromTop {
@@ -78,15 +81,15 @@ nav {
   
   .left {
     color:  #6e9e89;
-    font-size: 22px; 
-    font-weight: 500;
+    font-size: 18px; 
+    font-weight: bold;
   }
   a{
-    padding: 10px;
+    padding:25px;
     text-decoration: none;
     color: black;
-    font-size: 18px; 
-    font-weight: 500;
+    font-size: 16px; 
+    font-weight: bold;
   }
 
   .social-icons {
@@ -98,26 +101,26 @@ nav {
     display: flex;
     align-items: center;
     flex-direction: column;
-    opacity: 0; /* Initially hidden */
-    animation: fadeInSocialIcons 1s ease 1.5s forwards; /* Fade in after 1 second */
+    opacity: 0;
+    animation: fadeInSocialIcons 0.5s ease 1s forwards; /* Faster animation */
   }
   
   .social-icons a {
     color: gray; 
     text-decoration: none;
     font-size: 24px; 
+    padding: 6px;
   }
   
 
   .content-wrapper {
     margin-top: 100px;
-    opacity: 0; 
-    transform: translateY(30%); /* Initially moved down */
-    animation: slideFromBottom 1s ease 2s forwards; /* Slide in from the bottom after 2 seconds */
+    opacity: 0;
+    transform: translateY(30%);
+    animation: slideFromBottom 0.5s ease 1s forwards; /* Faster animation */
     height: 100vh;
-
-    
-} 
+    padding-top: 35px;
+  }
 
 @keyframes slideFromBottom {
   from {
@@ -133,18 +136,18 @@ nav {
 
 .content-wrapper h1 {
   color:  #6e9e89;
-  font-size: 50px;
-  font-weight: lighter;
+  font-size: 65px;
+  font-weight: bolder;
   margin: auto;
 }
 
 .content-wrapper p{
+  padding-top: 10px;
   color:  black;
-  font-size: 50px;
-  margin-right:70vh;
+  font-size: 65px;
+  margin-right:15vh;
+  font-weight: bolder;
   margin-top: auto;
-  
-  font-weight: 500;
 }
 /* Update your CSS */
 .down {
@@ -153,19 +156,18 @@ nav {
   left: 0;
   margin-left: 22vh;
   margin-bottom: 5vh;
-  animation: fadeInFromTop 1s ease 2s forwards; /* Apply the same fade-in animation after 2 seconds */
+  animation: fadeInFromTop 0.5s ease 1s forwards; /* Faster animation */
 }
 
 .down span {
   margin-left: 10px;
-  font-size: 15px;
-  font-weight: 500;
-  opacity: 0; /* Initially hidden */
-  transform: translateY(100%); /* Move down completely out of view */
-  animation: fadeInFromTop 1s ease 2s forwards; /* Apply the same fade-in animation after 2 seconds */
+  font-size: 16px;
+  font-weight: bolder;
+  opacity: 0;
+  transform: translateY(100%);
+  padding-left: 10px;
+  animation: fadeInFromTop 0.5s ease 1s forwards; /* Faster animation */
 }
-
-  
 @media screen and (max-width: 1200px) {
   nav {
     flex-direction: row; 
@@ -225,6 +227,7 @@ margin-left: 70px;
   }
   a{
     font-size: 13px;
+    font-weight: bolder;
      }
 
 }
