@@ -62,10 +62,8 @@ const Section = () => {
         </p>
       </div>
       <div className="down">
-        <span>
-          <FontAwesomeIcon className="icon" icon={faArrowDown} />
-          Browse Topic and Resources
-        </span>
+        <FontAwesomeIcon className="icon" icon={faArrowDown} />
+        <span>Browse Topic and Resources</span>
       </div>
       <Social />
     </section>
