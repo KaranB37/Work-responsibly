@@ -43,7 +43,9 @@ const Section = () => {
     <section className="custom-section ">
       {showWhiteSheet && <div className="white-sheet" />}
       <nav>
-        <div className="left">IMK ツ </div>
+        <div className="left">
+          IMK <span class="special-character">ツ</span>
+        </div>
         <div className="right">
           <a href="/about">About</a>
           <a href="/suggest">Suggest a link</a>

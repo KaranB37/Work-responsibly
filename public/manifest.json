@@ -1,17 +1,7 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
-  "icons": [
-    {
-
-    },
-    {
-
-    },
-    {
-
-    }
-  ],
+  "short_name": "IMK ツ",
+  "name": "Empowering Women's Wellness: Share Your Journey, Shape Our Future.",
+  "icons": [{}, {}, {}],
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#000000",

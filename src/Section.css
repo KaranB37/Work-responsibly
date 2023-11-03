@@ -1,20 +1,22 @@
-/* Section.css */
+
 .custom-section {
   position: relative;
   padding: 7vh 25vh;
-  background-color: #f8f8f8; /* Set the background color to the final color */
-  z-index: 1; /* Place this section above other content */
+  background-color: #f8f8f8; 
+  z-index: 1; 
   
 }
-/* Add this CSS to your stylesheet */
-
+ .special-character {
+  color: 
+  #e878c8; 
+}
 
 .icon {
   color: rgb(0, 0, 0);
   font-size: 24px;
-  opacity: 0; /* Initially hidden */
-  transform: translateY(-30%); /* Initially moved up */
-  animation: fadeInFromTop 0.5s ease 1s forwards; /* Faster animation */
+  opacity: 0; 
+  transform: translateY(-30%); 
+  animation: fadeInFromTop 0.5s ease 1s forwards; 
 }
 
 
@@ -31,22 +33,17 @@ body{
   height: 100%;
   background-color: white;
   z-index: 2;
-  animation: slideWhiteSheet 1s ease-in-out forwards; /* Faster animation */
+  animation: slideWhiteSheet 1s ease-in-out forwards; 
 }
 
 @keyframes slideWhiteSheet {
   from {
-    transform: translateX(0); /* Initially visible */
+    transform: translateX(0); 
   }
   to {
-    transform: translateX(100%); /* Slide the white sheet to the right */
+    transform: translateX(100%); 
   }
 }
-
-/* Other styles remain the same */
-
-/* Other styles remain the same */
-
 
 
 
@@ -56,7 +53,7 @@ nav {
   width: 100%;
   flex-direction: row;
   opacity: 0;
-  animation: fadeInNav 0.5s ease 1s forwards; /* Faster animation */
+  animation: fadeInNav 0.5s ease 1s forwards; 
 }
 
 @keyframes fadeInFromTop {
@@ -112,7 +109,7 @@ nav {
     align-items: center;
     flex-direction: column;
     opacity: 0;
-    animation: fadeInSocialIcons 0.5s ease 1s forwards; /* Faster animation */
+    animation: fadeInSocialIcons 0.5s ease 1s forwards; 
   }
   
   .social-icons a {
@@ -127,7 +124,7 @@ nav {
     margin-top: 100px;
     opacity: 0;
     transform: translateY(30%);
-    animation: slideFromBottom 0.5s ease 1s forwards; /* Faster animation */
+    animation: slideFromBottom 0.5s ease 1s forwards; 
     height: 100vh;
     padding-top: 35px;
   }
@@ -166,7 +163,7 @@ nav {
   left: 0;
   margin-left: 22vh;
   margin-bottom: 5vh;
-  animation: fadeInFromTop 0.5s ease 1s forwards; /* Faster animation */
+  animation: fadeInFromTop 0.5s ease 1s forwards; 
 }
 
 .down span {
@@ -176,7 +173,7 @@ nav {
   opacity: 0;
   transform: translateY(100%);
   padding-left: 10px;
-  animation: fadeInFromTop 0.5s ease 1s forwards; /* Faster animation */
+  animation: fadeInFromTop 0.5s ease 1s forwards; 
 }
 @media screen and (max-width: 1200px) {
   nav {
@@ -265,13 +262,7 @@ margin-left: 70px;
 
 .typed-cursor {
   display: inline-block;
-  width: 1ch; /* Adjust the width of the cursor as needed */
-  background-color: black; /* Color of the cursor */
+  width: 1ch; 
+  background-color: black;
   animation: blinkCursor 1s step-end infinite;
-}
-
-@keyframes blinkCursor {
-  from, to {
-    background-color: black; /* Color of the cursor */
-  }
 }
