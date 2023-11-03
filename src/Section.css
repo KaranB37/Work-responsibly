@@ -220,26 +220,30 @@ margin-left: 70px;
 
 @media screen and (max-width: 500px) {
   .content-wrapper h1, p {
-    font-size: 33px;}
+    font-size: 28px;
+  }
+
   .custom-section {
     padding: 3vh 0vh;
-}
+  }
+
   nav {
     flex-direction: row; 
     align-self: space-between;
+  }
 
-  }
   nav .left{
- font-size: 13px;
+  font-size: 13px;
   }
+
   a{
     font-size: 13px;
     font-weight: bolder;
-     }
-
+  }
 }
-@media screen and (max-width: 800px){
 
+
+@media screen and (max-width: 800px){
   .content-wrapper p{
     font-size: 36px;
     margin-right: 16vh;
@@ -249,7 +253,7 @@ margin-left: 70px;
 @media screen and (max-width: 600px){
 
   .content-wrapper p{
-    font-size: 36px;
+    font-size: 30px;
     margin-right: 0vh;
     margin-top: 15px;
   }
@@ -260,9 +264,12 @@ margin-left: 70px;
 }
 
 
-.typed-cursor {
-  display: inline-block;
-  width: 1ch; 
-  background-color: black;
-  animation: blinkCursor 1s step-end infinite;
+@media screen and (max-width: 768px){
+
+  .content-wrapper p{
+    font-size: 30px;
+    margin-right: 48vw;
+    margin-top: 15px;
+  }
+  
 }
