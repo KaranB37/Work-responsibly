@@ -90,7 +90,7 @@ nav {
 
   
   .left {
-    color:  #6e9e89;
+    color:  black;
     font-size: 14px; 
     font-weight: bold;
   }
@@ -145,7 +145,7 @@ nav {
 
 
 .content-wrapper h1 {
-  color:  #6e9e89;
+  color:  #e878c8;
   font-size: 65px;
   font-weight: bolder;
   margin: auto;
@@ -155,7 +155,7 @@ nav {
   padding-top: 10px;
   color:  black;
   font-size: 65px;
-  margin-right:15vh;
+  margin-right:30vw;
   font-weight: bolder;
   margin-top: auto;
 }
@@ -208,7 +208,7 @@ nav {
     }
     .content-wrapper p{
       font-size: 36px;
-      margin-right: 39vh;
+      margin-right: 60vh;
       margin-top: 15px;
     }
     .content-wrapper {

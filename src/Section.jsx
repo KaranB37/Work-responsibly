@@ -22,9 +22,7 @@ const Section = () => {
     }, 1500); // Faster animation
 
     const options = {
-      strings: [
-        "A collection of resources for a healthy and balanced approach to work.",
-      ],
+      strings: ["We get it, We got you  Let us take care of you"],
       typeSpeed: 40, // Faster typing speed
       backSpeed: 30, // Faster erasing speed
       startDelay: 500, // Reduced delay before typing starts
@@ -35,7 +33,6 @@ const Section = () => {
 
     if (typedRef.current) {
       const typed = new Typed(typedRef.current, options);
-
       return () => {
         typed.destroy();
       };
@@ -46,7 +43,7 @@ const Section = () => {
     <section className="custom-section ">
       {showWhiteSheet && <div className="white-sheet" />}
       <nav>
-        <div className="left">Work Responsibly</div>
+        <div className="left">IMK ツ </div>
         <div className="right">
           <a href="/about">About</a>
           <a href="/suggest">Suggest a link</a>
@@ -54,7 +51,7 @@ const Section = () => {
       </nav>
 
       <div className="content-wrapper">
-        <h1>Work Responsibly</h1>
+        <h1>IMKツ (I'm Okay)</h1>
         <p>
           <span className="constant-text">— </span>
           <span ref={typedRef}></span>
