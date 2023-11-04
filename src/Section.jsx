@@ -22,7 +22,7 @@ const Section = () => {
     }, 1500); // Faster animation
 
     const options = {
-      strings: ["We get it, We got you  Let us take care of you"],
+      strings: ["We get it, We got you \n Let us take care of you"],
       typeSpeed: 40, // Faster typing speed
       backSpeed: 30, // Faster erasing speed
       startDelay: 500, // Reduced delay before typing starts
